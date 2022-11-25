@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Limelight&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/* header */
+
+.header-nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__title {
+    font-family: 'Limelight', cursive;
+}
+
+.header-nav__cart-section p {
+    display: none;
+}
+
+/* Hero section */
+/* Photo by Huy Phan on Unsplash TACK till Phan */
+.hero {
+    background-image: url('../assets/huy-phan-dM317CbttyY-unsplash.jpg');
+    background-size: cover;
+    height: 30vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__title {
+    color: white;
+    font-size: 2rem;
+    width: 70vw;
+    font-weight: bold;
+}
+
+.hero__shop-button {
+    height: 3rem;
+    width: 7rem;
+    background-color: #327162;
+    border: 1px solid #327162;
+    border-radius: 6%;
+    color: white;
+    font-weight: bold;
+    align-self: end;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.257);
+}
+
+/* image with text section */
+
+.image-with-text {
+    padding: 2rem 1rem;
+}
+
+.image-with-text__text {
+    margin-bottom: 1rem;
+}
+
+.image-with-text__text hr {
+    color: #327162;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 1rem;
+    width: 12.5rem;
+}
+
+/* Photo by Ceyda Çiftci on Unsplash TACK till Ciftci */
+.image-with-text__image {
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/ceyda-ciftci-dDVU6D_6T80-unsplash.jpg');
+}
+
+/* products grid section */
+
+.products-grid {
+    padding: 1rem;
+}
+
+.products-grid__title {
+    text-align: center;
+}
+
+.products-grid__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: calc(50vw - 1.5rem);
+    margin-bottom: 1rem;
+    box-shadow: -1px 1px 7px #00000033;
+}
+
+.product-card__image {
+    height: calc(50vw - 1.5rem);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/kara-eads-EbLX7oRo4vI-unsplash.jpg");
+}
+
+.product-card__info-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8rem;
+    height: 4.5rem;
+}
+
+.product-card__info-rows>* {
+    width: 50%;
+    align-self: flex-start;
+}
+
+.product-card__info-rows img {
+    width: 1.5rem;
+}
+
+.product-card__info-rows h5 {
+    font-weight: 400;
+    font-size: 0.625rem;
+    align-self: flex-end;
+}
+
+.product-card__info-rows p {
+    text-align: right;
+    align-self: flex-end;
+}
+
+
+/* ------ DESKTOP STYLING ------ */
+
+@media screen and (min-width: 900px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .header-nav__title {
+        font-size: 2.5rem;
+    }
+
+    .header-nav__cart-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-nav__cart-section p {
+        display: inline-block;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .hero {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .hero__title {
+        font-size: 6rem;
+    }
+
+    .hero__shop-button {
+        height: 5.625rem;
+        width: 12.5rem;
+        font-size: 2.5rem;
+    }
+
+    .image-with-text {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 6rem 10rem;
+    }
+
+    .image-with-text__text {
+        padding-left: 1.5rem;
+        width: 50%;
+    }
+
+    .image-with-text__text h3 {
+        font-weight: 600;
+    }
+
+    .image-with-text__text hr {
+        width: 20rem;
+    }
+
+    .image-with-text__text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .image-with-text__image {
+        width: 50%;
+        height: auto;
+    }
+
+    .products-grid {
+        padding: 0 10rem;
+    }
+
+    .products-grid__products {
+        gap: 1rem;
+    }
+
+    .products-grid__title {
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    .product-card{
+        width: 17.5rem;
+        height: 18,250rem;
+    }
+
+    .product-card figure {
+        height: 14rem;
+    }
+}
